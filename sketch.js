@@ -13,12 +13,18 @@ function populategrid(){
             cell.classList.add('cell');
             cell.style.cssText = `width: ${600/size}px; height: ${600/size}px;`;
             grid.appendChild(cell);
+            cell.addEventListener("mouseover", changecolor);
         }
     }
 }
 
 function deletegrid() {
     grid.innerHTML = "";
+}
+
+function changecolor(e){
+    const color = document.querySelector('#colorpicker').value;
+        e.target.style.backgroundColor = color;
 }
 
 const gengrid = document.querySelector('#generate');
