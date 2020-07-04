@@ -5,13 +5,24 @@
   width: 600px;
   height: 600px;
   border: 1px solid black;
+  margin: 0 auto;
 }
 
 .flex-container > div {
   box-sizing: border-box;
   background-color:white;
   margin: 0px;
+  border: 1px solid black;
   text-align: center;
   line-height: 75px;
   font-size: 30px;
+}
+.buttons{
+
+    text-align: center;
+}
+
+
+h1 {
+    text-align: center;
 }

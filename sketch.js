@@ -1,7 +1,11 @@
 
+const grid = document.querySelector("#container");
+const resetgrid = document.querySelector('#resetgrid');
+resetgrid.addEventListener('click', deletegrid);
 
-function populategrid(size){
-    const grid = document.querySelector('#container');
+function populategrid(){
+    deletegrid();
+    const size = document.querySelector('#gsizeinput').valueAsNumber;
     for(let i =0; i<size; i++){
         //var rowcell = document.createElement()
         for( let j =0; j<size;j++){
@@ -13,5 +17,10 @@ function populategrid(size){
     }
 }
 
+function deletegrid() {
+    grid.innerHTML = "";
+}
+
 const gengrid = document.querySelector('#generate');
-gengrid.addEventListener('click',populategrid(50));
+gengrid.addEventListener('click', populategrid);
+
