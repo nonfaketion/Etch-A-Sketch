@@ -1,7 +1,7 @@
 
 const grid = document.querySelector("#container");
-const resetgrid = document.querySelector('#resetgrid');
-resetgrid.addEventListener('click', deletegrid);
+const reset = document.querySelector('#resetgrid');
+reset.addEventListener('click', resetgrid);
 
 function populategrid(){
     deletegrid();
@@ -17,6 +17,12 @@ function populategrid(){
         }
     }
 }
+function resetgrid() {
+    const cells = document.querySelectorAll('.cell');
+    cells.forEach(element => {
+        element.style.backgroundColor = "rgb(255, 255, 255)";
+    });
+}
 
 function deletegrid() {
     grid.innerHTML = "";
@@ -29,4 +35,5 @@ function changecolor(e){
 
 const gengrid = document.querySelector('#generate');
 gengrid.addEventListener('click', populategrid);
+populategrid();
 
