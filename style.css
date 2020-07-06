@@ -1,6 +1,5 @@
 body {
   background-image: url("images/drawing-doodle-wallpaper-preview.jpg");
-
   background-size: 1000px;
 }
 h1{
@@ -10,7 +9,7 @@ h1{
     text-shadow: 0.5rem 0.3rem 0rem black;
     font-family: "Yellowtail", cursive;
     text-align: center;
-    font-size: 6rem;
+    font-size: 4rem;
     letter-spacing: 1.3rem;
     margin: 0rem 0;
 }
@@ -78,7 +77,6 @@ button{
   width: 36px;
   height: 23px;
 }
-
 
 h1 {
     text-align: center;
