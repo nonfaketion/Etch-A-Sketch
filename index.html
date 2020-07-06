@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <h1>Sketchy sketch</h1>
+        <h1>Etch-A-Sketch</h1>
     </header>
 
     <main>
@@ -18,13 +18,15 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="settings">
         <div class='buttons'>
             <button id='resetgrid'>Reset</button>
             <input id='colorpicker' type="color" value="#000000">
+        </div>
+        <div class='inputs'>
             <input  id ='gsizeinput' type="number" placeholder="1-100" min="1" max="100" value='36'>
             <button id="generate">Generate</button>
-        </div>
+         </div>
     </footer>
     <script src="sketch.js"></script>
 </body>
